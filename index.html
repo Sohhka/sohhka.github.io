@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Ledger Link</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ledger Link</h1>
+    <div id="burger-icon">&#9776;</div>
+    <button id="theme-toggle">🌑</button>
+  </header>
+
+  <nav id="burger-menu" class="closed">
+    <div class="burger-menu-content">
+      <h2>Pannel admin</h2>
+      <form id="login-form">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" id="username" name="username" required />
+        
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required />
+        
+        <button type="submit">Se connecter</button>
+      </form>
+      <p id="login-message" class="error-message"></p>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="crypto-section">
+      <h2>Liste des cryptomonnaies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Crypto</th>
+            <th>Prix</th>
+            <th>%</th>
+            <th id="admin-col" class="hidden">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-table-body">
+        </tbody>
+      </table>
+      <button id="logout-btn" class="hidden">Se déconnecter</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

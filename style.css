@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+}
+
+header {
+  background: #2c3e50;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+header #burger-icon {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+header #theme-toggle {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #ecf0f1;
+  color: #2c3e50;
+  margin-left: 1rem;
+}
+
+#burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background: #ecf0f1;
+  overflow: hidden;
+  transform: translateX(-260px);
+  transition: transform 0.3s ease;
+  z-index: 9999;
+}
+#burger-menu .burger-menu-content {
+  margin: 2rem;
+}
+
+#burger-menu.open {
+  transform: translateX(0);
+}
+
+.error-message {
+  margin-top: 0.5rem;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+form label {
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+form input {
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+form button {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 3px;
+  background: #4e8f52;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+form button:hover {
+  background: #6ec774;
+}
+
+.container {
+  width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#crypto-section {
+  background: #fff;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+#crypto-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#crypto-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+#crypto-section table thead {
+  background: #ecf0f1;
+}
+#crypto-section table thead th {
+  padding: 0.8rem;
+  text-align: left;
+}
+#crypto-section table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+#crypto-section table tbody tr td {
+  padding: 0.8rem;
+  vertical-align: middle;
+}
+#crypto-section #logout-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 3px;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#crypto-section #logout-btn:hover {
+  background: #c0392b;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit-button {
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #4e8f52;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.edit-button:hover {
+  background: #6ec774;
+}
+
+.edit-input {
+  width: 50px;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+body.dark-theme {
+  background: #2c2c2c;
+  color: #ccc;
+}
+
+body.dark-theme header {
+  background: #1b1b1b;
+}
+body.dark-theme header #burger-icon {
+  color: #fff;
+}
+body.dark-theme header #theme-toggle {
+  background: #333;
+  color: #fff;
+}
+
+body.dark-theme #burger-menu {
+  background: #333;
+}
+
+body.dark-theme #crypto-section {
+  background: #3a3a3a;
+  color: #fff;
+}
+body.dark-theme #crypto-section table thead {
+  background: #4a4a4a;
+}
+body.dark-theme #crypto-section table tbody tr {
+  border-bottom: 1px solid #666;
+}
+
+/*# sourceMappingURL=style.css.map */
